@@ -1,0 +1,408 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("./assets/images/newBg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* .HomeContainer {
+  background: url("./assets/images/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: auto;
+  left: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 674px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+} */
+
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:first-child {
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: -80px;
+}
+.shape:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  right: -30px;
+  bottom: -80px;
+}
+#loginForm {
+  height: 520px;
+  width: 400px;
+  /* background-color: rgba(255, 255, 255, 0.13); */
+  background-color: rgb(129 213 205);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+#loginForm * {
+  font-family: "Poppins", sans-serif;
+  color: #080808;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+#loginForm h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+#username,
+#password {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder {
+  color: #e5e5e5;
+}
+#loginBtn {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.social {
+  margin-top: 30px;
+  display: flex;
+}
+.social div {
+  margin: 0 25%;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255, 255, 255, 0.27);
+  text-align: center;
+}
+.social div:hover {
+  background-color: rgba(255, 255, 255, 0.47);
+}
+.social .fb {
+  margin-left: 25px;
+}
+.social i {
+  margin-right: 4px;
+}
+
+.login-logo {
+  text-align: center;
+  padding: 15px 0 10px;
+}
+.login-logo img {
+  border: 0;
+}
+
+/* .sideBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+} */
+
+.sideBar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 1; /* Stay on top */
+  top: 0;
+}
+.headerContainer {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: 2em !important;
+}
+
+a:hover {
+  color: aqua !important;
+}
+
+.homeLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.logout {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.caseContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #d7ccec;
+}
+/* .caseContainer {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+} */
+/* .caseContainer #header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+} */
+.caseContainer .caseForm {
+  margin-top: 20px;
+}
+.caseForm .input-box {
+  width: 100%;
+  margin-top: -15px;
+}
+.input-box label {
+  color: #333;
+}
+.caseForm :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.caseForm :where(.input-box textarea) {
+  position: relative;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.caseForm .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.caseForm .selectColumn {
+  display: flex;
+  column-gap: 15px;
+  margin: 20px 0 0 0;
+}
+
+.caseForm .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.caseForm :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.caseForm .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.caseForm :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.caseForm button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+.caseForm button:hover {
+  background: rgb(88, 56, 250);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .caseForm .column {
+    flex-wrap: wrap;
+  }
+  .caseForm :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+.mainForm {
+  margin-top: 50px;
+}
+input[required],
+textarea[required],
+select[required] {
+  background-image: radial-gradient(#f00 15%, transparent 16%),
+    radial-gradient(#f00 15%, transparent 16%);
+  background-size: 3em 3em;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+#password,
+#username {
+  background-color: white !important;
+}
+
+.select-box {
+  border: 2px solid white !important;
+}
+
+#searchForm {
+  height: 400px;
+  width: 400px;
+  /* background-color: rgba(255, 255, 255, 0.13); */
+  background-color: rgb(129 213 205);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+  margin-left: 10%;
+}
+
+#searchForm * {
+  font-family: "Poppins", sans-serif;
+  color: #080808;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+#searchFormList {
+  height: 600px;
+  width: 400px;
+
+  /* background-color: rgba(255, 255, 255, 0.13); */
+  /* background-color: rgb(129 213 205); */
+  background-color: transparent;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+#searchFormList * {
+  font-family: "Poppins", sans-serif;
+  color: #080808;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
